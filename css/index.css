@@ -48,6 +48,12 @@ body {
     src: url(../fonts/JF-Flat-Regular.ttf);
 }
 
+@font-face {
+    font-family: font_bold_italic;
+    src: url(../fonts/khalaad-al-arabeh.ttf);
+}
+
+
 h1,
 h2,
 h3,
@@ -59,6 +65,10 @@ p {
     text-transform: capitalize;
 }
 
+h1{
+    font-family: font_bold_italic !important;
+
+}
 ul {
     list-style: none;
     margin: 0;
@@ -155,10 +165,27 @@ a {
     background-color: #fff
 }
 
+.main_navbar .nav-item.active {
+    position: relative;
+}
 
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--main-color);
 
+.main_navbar .nav-item.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: -18px;
+    left: 0;
+    background-color: #DB504A;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.main_navbar .nav-item.active a {
+    color: #fff;
+    position: relative;
+    z-index: 1
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -175,19 +202,35 @@ a {
 
 }
 
-.navbar-light .dropdown-item {
-    padding: 1.25rem 1rem;
+
+.dropdown-menu {
+    padding: 0;
     font-weight: 400;
-    color: var(--second-color);
-    text-decoration: none;
+    color: #fff;
     text-align: right;
+    background-color: var(--second-color);
+    top: 50px !important;
+    border-radius: 10px;
+    right: 0;
+    width: 100%;
 }
 
-.navbar-light .dropdown-menu[data-bs-popper] {
-    top: 100%;
-    right: 0;
-    margin-top: 1.125rem;
-    width: 100%;
+.navbar-light .dropdown-item {
+    padding: 1.0rem 1rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+    border-bottom: 1px solid #0f9ec960;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: var(--main-color);
+}
+
+.navbar-light .dropdown-menu2[data-bs-popper] {
+    top: -1% !important;
+    right: calc(100% + 10px);
 
 }
 
@@ -286,6 +329,7 @@ a {
 
 .landing .container .box {
     flex-basis: 50%;
+    overflow: hidden;
 }
 
 .landing .container .box img {
@@ -892,7 +936,7 @@ footer .my_footer .footer_list li a:hover {
 }
 
 
-footer .subscribe form{
+footer .subscribe form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -926,7 +970,7 @@ footer .subscribe button {
 
     footer .footer_list ul {
         flex-direction: column;
-        padding:20px 0;
+        padding: 20px 0;
     }
 
     footer .footer_list ul li {
@@ -936,6 +980,10 @@ footer .subscribe button {
     footer .subscribe input:first-of-type {
         background-color: var(--section-color);
     }
+
+    footer .footer_social {
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -943,9 +991,10 @@ footer .subscribe button {
         background: var(--second-color);
 
     }
+
     footer .footer_list ul {
         flex-direction: column;
-        padding:20px 0;
+        padding: 20px 0;
     }
 
     footer .footer_list ul li {
@@ -960,21 +1009,22 @@ footer .subscribe button {
 
 @media (min-width: 992px) and (max-width: 1230px) {
     footer .my_footer .footer_social a {
-    font-size: 18px;
-    padding: 5px;
-}
-footer .my_footer .footer_list li a {
-    padding: 0 15px;
-    font-size: 12px;
-}
+        font-size: 18px;
+        padding: 5px;
+    }
 
-footer .subscribe button {
-    background: rgb(255, 255, 255);
-    border: none;
-}
+    footer .my_footer .footer_list li a {
+        padding: 0 15px;
+        font-size: 12px;
+    }
 
-footer .subscribe button i{
-    color:rgb(83, 83, 83);
-}
+    footer .subscribe button {
+        background: rgb(255, 255, 255);
+        border: none;
+    }
+
+    footer .subscribe button i {
+        color: rgb(83, 83, 83);
+    }
 
 }
