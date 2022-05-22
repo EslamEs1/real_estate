@@ -159,13 +159,14 @@ h1 {
 }
 
 .finishes_all .first_box {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
   margin: 40px 0;
   padding: 20px 30px;
   border-radius: 10px;
   display: flex;
   position: relative;
   align-items: center;
+  border:1px solid #084c612b
 
 }
 
@@ -205,13 +206,14 @@ h1 {
 }
 
 .finishes_all .item .box {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
   margin: 20px 0;
   padding: 10px 20px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border:1px solid #084c612b
 
 }
 
