@@ -27,7 +27,7 @@
     </div>
   </div>
   <!-- Start Main NavBar -->
-  <div class="main_navbar">
+   <div class="main_navbar">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -40,44 +40,29 @@
               <li class="nav-item active">
                 <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  الأسعار
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li class="dropdown dropend">
-                      <a class="dropdown-item" href="#" id="multilevelDropdownMenu1"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">أسعار التتشطيبات <i style="margin-right:20px;" class="fa-solid fa-left-long"></i></a>
-                      <ul class="dropdown-menu dropdown-menu2" aria-labelledby="multilevelDropdownMenu1">
-                        <li><a class="dropdown-item" href="#">تتشطيبات النقاشة</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات السباكة</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات المحارة</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات الديكور</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات السيراميك</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات الموبيليا</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات البناء</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات الخرسانة</a></li>
-                        <li><a class="dropdown-item" href="#">تشطيبات الكهرباء</a></li>
-                      </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="#">أجور وأسعار الصنايعية</a></li>
-                    <li><a class="dropdown-item" href="#">أسعار المواد</a></li>
-                    <li><a class="dropdown-item" href="#">أسعار الأراضى</a></li>
-                  </ul>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link " href="#">مقالات</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">متجر</a>
+                <a class="nav-link " href="#">العقارات</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="multilevelDropdownMenu1" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  الخدمات </a>
+                <ul class="dropdown-menu pol" aria-labelledby="dropdownMenuLink">
+                  <li class="dropdown dropend">
+                    <a class="dropdown-item" href="#"> مقالات عامة</a>
+                    <a class="dropdown-item" href="#">توريد البضائع</a>
+                    <a class="dropdown-item" href="#">المقاولات العامة </a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">ألوان لشتقك</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">أطلب صنايعي</a>
-              </li>
+             
               <li class="nav-item">
                 <a class="nav-link" href="#">تواصل معنا</a>
               </li>
@@ -433,7 +418,6 @@
           <li><a href="#">مقالات</a></li>
           <li><a href="#">ألوان لشقتك</a></li>
           <li><a href="#">أطلب صنايعى</a></li>
-          <li><a href="#">تواصل معنا</a></li>
         </ul>
       </div>
       <div class="subscribe">
@@ -448,11 +432,11 @@
   <script src="js/bootstrap.min.js"></script>
   <script>
     var myDropdown = document.getElementsByClassName('dropdown-toggle')
-    for (i=0; i<myDropdown.length; i++) {
-        myDropdown[i].addEventListener('click', function () {
-            var el = this.nextElementSibling;
-            el.style.display = el.style.display == 'block' ? 'none' : 'block';
-        });
+    for (i = 0; i < myDropdown.length; i++) {
+      myDropdown[i].addEventListener('click', function () {
+        var el = this.nextElementSibling;
+        el.style.display = el.style.display == 'block' ? 'none' : 'block';
+      });
     }
   </script>
   <script src="js/jquery.js"></script>
