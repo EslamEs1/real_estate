@@ -36,10 +36,7 @@ background: linear-gradient(90deg, rgba(13,160,205,1) 0%, rgba(10,110,141,1) 35%
   src: url(../fonts/khalaad-al-arabeh.ttf);
 }
 
-h1 {
-  font-family: font_bold_italic;
 
-}
 
 
 /* @media (min-width: 576px) { ... }

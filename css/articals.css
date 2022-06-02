@@ -36,10 +36,7 @@ background: linear-gradient(90deg, rgba(13,160,205,1) 0%, rgba(10,110,141,1) 35%
   src: url(../fonts/khalaad-al-arabeh.ttf);
 }
 
-h1 {
-  font-family: font_bold_italic;
 
-}
 
 
 /* @media (min-width: 576px) { ... }
@@ -210,6 +207,17 @@ h1 {
   height: 80px;
   border-radius: 10px;
   margin-left:5px;
+}
+
+.new_articles .box_articles .who_info a:first-of-type{
+  display: block;
+  margin-bottom:10px;
+}
+
+.new_articles .box_articles .who_info i ,.box_articles .who_info span{
+  color:#999;
+  padding:0 5px;
+  font-size: 14px;
 }
 
 .Articles .post_box {

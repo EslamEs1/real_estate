@@ -65,10 +65,11 @@ p {
     text-transform: capitalize;
 }
 
-h1{
+h1 {
     font-family: font_bold_italic !important;
 
 }
+
 ul {
     list-style: none;
     margin: 0;
@@ -274,6 +275,8 @@ a {
     .first_nav .box:last-of-type p {
         margin: 0 15px 0 0;
     }
+
+    
 }
 
 @media (min-width: 280px) and (max-width: 991px) {
@@ -295,6 +298,10 @@ a {
         position: absolute;
         left: 0;
     }
+     .main_navbar .nav-item.active::after {
+        top: 0;
+
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -303,7 +310,7 @@ a {
     }
 
     .navbar-light .navbar-nav .nav-link {
-        padding: 0 10px;
+        padding: 0 8px;
     }
 
 }
@@ -961,6 +968,12 @@ footer .subscribe button {
     border-radius: 5px;
 }
 
+.my_footer .subscribe a{
+        display: none;
+        
+
+    }
+
 @media (max-width: 767px) {
     footer .my_footer {
         display: block;
@@ -983,6 +996,25 @@ footer .subscribe button {
 
     footer .footer_social {
         text-align: center;
+    }
+
+    .my_footer .footer_social a:last-of-type{
+        display: none;
+    }
+    .my_footer .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .my_footer .subscribe a{
+        margin-top:20px;
+        display: block;
+        
+
     }
 }
 
@@ -1007,7 +1039,7 @@ footer .subscribe button {
 }
 
 
-@media (min-width: 992px) and (max-width: 1230px) {
+@media (min-width: 992px) and (max-width: 1255px) {
     footer .my_footer .footer_social a {
         font-size: 18px;
         padding: 5px;
