@@ -61,7 +61,8 @@ background: linear-gradient(90deg, rgba(13,160,205,1) 0%, rgba(10,110,141,1) 35%
 }
 
 .details p{
-   line-height:var(--line-height)
+   line-height:var(--line-height);
+   font-family: font_reg;
 
 }
 
